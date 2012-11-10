@@ -1,7 +1,7 @@
 Yulan
 =====
 
-A JavaScript UI Toolkit (to replace the rest)
+A JavaScript UI System (to replace the rest)
 
 Yulan aims to provide an extremely polished UI system for JavaScript application developers. 
 None of the most popular frameworks (Dojo, jQuery UI, MooTools, Qooxdoo, ExtJS, etc.) offer a level of sophistication 
