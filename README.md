@@ -7,7 +7,7 @@ None of the most popular open source frameworks (Dojo, jQuery UI, MooTools, Qoox
 comparable to the most advanced desktop operating systems. The Yulan kernel is a small, fast, extremely powerful UI
 system for building rich, desktop-quality apps.
  
-## Getting Started
+# Getting Started
 
 Yulan is built with the LESS CSS preprocessor and powered by the Sizzle.js selector engine. To build
 Yulan you'll need to install the LESS compiler, JSHint, uglify-js and recess. The project is in
