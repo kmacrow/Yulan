@@ -1,6 +1,8 @@
 Yulan
 =====
 
+[![Build Status](https://travis-ci.org/kmacrow/Yulan.png)](https://travis-ci.org/kmacrow/Yulan)
+
 A JavaScript UI System (to replace the rest)
 
 Yulan aims to provide a beautiful, high performance GUI toolkit for browser-based HTML5 applications. 
