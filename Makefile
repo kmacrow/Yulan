@@ -13,15 +13,16 @@ build: clean
 	@mkdir yulan
 	@echo "${HR}\n"
 	@jshint src/js/*.js --config src/js/.jshintrc
-	#@jshint src/js/tests/unit/*.js --config src/js/.jshintrc
+	@jshint tests/qunit-tests.js --config src/js/.jshintrc
 	@echo "Running JSHint on javascript...             ${CHECK} Done"
 	@lessc src/less/main.less yulan/yulan.tmp.css
 	@cat yulan/yulan.tmp.css src/css/spin.css src/css/icons.css > yulan/yulan.css
 	@rm yulan/yulan.tmp.css
 	@lessc --compress yulan/yulan.css yulan/yulan.min.css
 	@cp -R icons yulan/
+	@cp -R type yulan/
 	@echo "Compiling LESS...                           ${CHECK} Done"
-	@cat src/js/main.js > yulan/yulan.js
+	@cat src/js/sizzle.js src/js/main.js > yulan/yulan.js
 	@uglifyjs yulan/yulan.js -nc > yulan/yulan.min.js
 	@echo "Compiling and minifying javascript...       ${CHECK} Done"
 	@echo "\n${HR}"
